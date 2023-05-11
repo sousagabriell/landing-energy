@@ -168,7 +168,6 @@ padding:5px 3px;
 
 .menu-items li{
     list-style: none;
-    margin-left: 1.5rem;
     background-color: #000C34;
     padding: 1vh;
     border-radius: 8px;
@@ -192,8 +191,13 @@ padding:5px 3px;
 }
 
 @media (max-width: 820px){
+    .menu-items li{
+        border-radius: 0px;
+        padding-left: 10vw;
+        opacity: 1;
+    }
   .navbar{
-      opacity: 0.95;
+      opacity:1;
   }
 
   .navbar-container input[type="checkbox"],
@@ -263,9 +267,9 @@ padding:5px 3px;
       display: flex;
       flex-direction: column;
       margin-left: -40px;
-      padding-left: 40px;
+     
       transition: transform 0.5s ease-in-out;
-      box-shadow:  5px 0px 10px 0px #aaa;
+      box-shadow:  5px 0px 10px 0px #d6d6d693;
       overflow: scroll;
   }
 
@@ -297,6 +301,9 @@ padding:5px 3px;
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
       transform: rotate(-45deg);
   }
+  .menu-items li{
+    width: 100%;
+}
 
 }
 
@@ -327,7 +334,10 @@ padding:5px 3px;
   .bg-secondary{
     background-image: none;
     background-color: #000C34 !important;
-    height: 170vh;
+    height: 220vh !important;
+}
+.faq{
+    display: none;
 }
 .footer{
   background-color: #000C34;
